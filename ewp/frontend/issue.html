@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Issue Books</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h2>Issue a Book</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="students.html">Students</a>
+        <a href="issue.html">Issue Books</a>
+    </nav>
+
+    <input id="bookId" type="number" placeholder="Book ID">
+    <input id="studentId" type="number" placeholder="Student ID">
+
+    <button onclick="issueBook()">Issue</button>
+
+    <h2>Issued Books</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Book</th>
+                <th>Student</th>
+                <th>Issue Date</th>
+                <th>Return Date</th>
+                <th>Returned</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="issueTable"></tbody>
+    </table>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        loadIssues();
+    </script>
+
+</body>
+
+</html>
